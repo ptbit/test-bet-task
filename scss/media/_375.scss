@@ -1,0 +1,111 @@
+@media (min-width: 375px) and (max-width: 767px) {
+  .main__container {
+    background-image: url('../images/bg/5bg.png');
+  }
+
+  .logo {
+    width: 185px;
+    height: 60px;
+  }
+
+  .koala {
+    width: 245px;
+    height: 376px;
+    bottom: 84px;
+    left: 0;
+  }
+
+  .pyramid {
+    right: 0;
+    bottom: 80px;
+
+    &__projector {
+      &--1 {
+        display: none;
+      }
+
+      &--2 {
+        top: -36%;
+        left: 29%;
+      }
+
+      &--3 {
+        display: none;
+      }
+    }
+  }
+
+  .statue {
+    display: none;
+  }
+
+  .users-left,
+  .users-right {
+    display: none;
+  }
+
+  .info {
+    top: 80px;
+    right: 0;
+    left: 0;
+    padding-inline: 10px;
+
+    &__sub-title {
+      width: fit-content;
+      padding: 2px 12px;
+      margin: 0 auto 14px;
+
+      h2 {
+        font-size: 23px;
+        line-height: 32px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 12px;
+
+      h1 {
+        font-size: 39px;
+        line-height: 48px;
+        text-align: center;
+      }
+    }
+
+    &__details {
+      gap: 17px;
+      margin-bottom: 0;
+    }
+
+    .details__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .details__plus {
+      width: 35px;
+      height: 28px;
+      border: 0.8px solid #ededed;
+    }
+
+    .details__button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 88px;
+      background-color: #010155;
+      z-index: 100;
+
+      button {
+        width: calc(100% - 30px);
+        height: 58px;
+        border-radius: 3.36px;
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+}

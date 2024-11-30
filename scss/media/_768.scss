@@ -1,0 +1,106 @@
+// 768px * 1024px
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__container {
+    background-image: url('../images/bg/4bg.png');
+  }
+
+  .logo {
+    width: 277px;
+    height: 90px;
+  }
+
+  .koala {
+    width: 396px;
+    height: 624px;
+    bottom: 0;
+  }
+
+  .pyramid {
+    bottom: 12px;
+    right: 0;
+
+    &__projector {
+      &--1 {
+        top: -75%;
+        left: -60%;
+        transform: rotate(-110deg);
+      }
+
+      &--2 {
+        top: -85%;
+        left: 20%;
+      }
+
+      &--3 {
+        bottom: 5%;
+        right: -40%;
+      }
+    }
+  }
+
+  .statue {
+    display: none;
+  }
+
+  .users-right {
+    display: none;
+  }
+
+  .crowd {
+    max-height: 86px;
+  }
+
+  .info {
+    top: 86px;
+    right: 48px;
+
+    &__sub-title {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 38px;
+        line-height: 60px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 50px;
+        line-height: 65px;
+        text-align: end;
+      }
+    }
+
+    &__details {
+      gap: 23px;
+      margin-bottom: 24px;
+    }
+
+    .details__text {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .details__plus {
+      width: 40px;
+      height: 33px;
+      border: 1.1px solid #ededed;
+    }
+
+    .details__button {
+      display: flex;
+      justify-content: end;
+
+      button {
+        width: 272px;
+        height: 60px;
+        padding: 20px;
+        border-radius: 3.36px;
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+}

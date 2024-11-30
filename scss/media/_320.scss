@@ -1,0 +1,112 @@
+@media (min-width: 320px) and (max-width: 374px) {
+  .main__container {
+    background-image: url('../images/bg/6bg.png');
+  }
+
+  .logo {
+    width: 158px;
+    height: 51.5px;
+  }
+
+  .koala {
+    width: 217px;
+    height: 332px;
+    bottom: 72px;
+    left: 0;
+  }
+
+  .pyramid {
+    right: 0;
+    bottom: 72px;
+
+    &__projector {
+      &--1 {
+        display: none;
+      }
+
+      &--2 {
+        top: -23%;
+        left: 30%;
+      }
+
+      &--3 {
+        display: none;
+      }
+    }
+  }
+
+  .statue {
+    display: none;
+  }
+
+  .users-left,
+  .users-right {
+    display: none;
+  }
+
+  .info {
+    top: 80px;
+    right: 0;
+    left: 0;
+    padding-inline: 10px;
+
+    &__sub-title {
+      width: fit-content;
+      padding: 3px 12px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 19px;
+        line-height: 26px;
+      }
+    }
+
+    &__title {
+      margin-block: 12px;
+
+      h1 {
+        font-size: 33px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+
+    &__details {
+      gap: 14px;
+      margin-bottom: 0;
+    }
+
+    .details__text {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .details__plus {
+      width: 30px;
+      height: 24px;
+      border: 0.7px solid #ededed;
+    }
+
+    .details__button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      background-color: #010155;
+      z-index: 100;
+
+      button {
+        width: calc(100% - 26px);
+        height: 50px;
+        margin: 15px;
+        border-radius: 3.36px;
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+}
