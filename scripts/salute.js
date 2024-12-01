@@ -5,10 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Початково ховаємо всі салюти
     gsap.set(salute, { opacity: 0, scale: 0 });
 
+    const getRandomOffset = () => {
+      const viewportWidth = window.innerWidth;
+
+      // Визначаємо максимальне зміщення як 10% від ширини вікна
+      const offset = Math.round(viewportWidth * 0.1);
+      return gsap.utils.random(-offset, offset); // Випадкове значення в межах [-offset, offset]
+    };
+
     const animateSalute = () => {
-      const randomDelay = gsap.utils.random(2, 7); // Випадкова затримка між циклами
-      const randomX = gsap.utils.random(-200, 200); // Випадкове зміщення по X
-      const randomY = gsap.utils.random(-200, 200); // Випадкове зміщення по Y
+      const randomDelay = gsap.utils.random(2, 10); // Випадкова затримка між циклами
+      const randomX = getRandomOffset(); // Випадкове зміщення по X
+      const randomY = getRandomOffset(); // Випадкове зміщення по Y
 
       // Випадкова тривалість анімації від 1,5 до 3,5 секунд
       const randomDuration = gsap.utils.random(1.5, 3.5);

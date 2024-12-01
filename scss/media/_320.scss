@@ -45,7 +45,7 @@
   }
 
   .info {
-    top: 80px;
+    top: 69px;
     right: 0;
     left: 0;
     padding-inline: 10px;
@@ -107,6 +107,29 @@
         font-size: 16px;
         line-height: 21px;
       }
+    }
+  }
+
+  .salute {
+    &--1 {
+      max-width: 137px;
+      left: 0 !important;
+    }
+
+    &--2 {
+      max-width: 174px;
+      bottom: auto !important;
+      left: auto !important;
+      right: 0;
+      top: 40%;
+    }
+
+    &--3 {
+      display: none;
+    }
+
+    &--4 {
+      display: none;
     }
   }
 }

@@ -103,4 +103,27 @@
       }
     }
   }
+
+  .salute {
+    &--1 {
+      max-width: 272px;
+      left: 50px !important;
+    }
+
+    &--2 {
+      max-width: 272px;
+      top: 400px;
+      left: 270px !important;
+      bottom: auto !important;
+    }
+
+    &--3 {
+      max-width: 161px;
+      bottom: 150px !important;
+    }
+
+    &--4 {
+      max-width: 167px;
+    }
+  }
 }

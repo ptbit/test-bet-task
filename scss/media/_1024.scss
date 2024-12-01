@@ -95,4 +95,22 @@
       }
     }
   }
+
+  .salute {
+    &--1 {
+      max-width: 321px;
+    }
+
+    &--2 {
+      display: none;
+    }
+
+    &--3 {
+      max-width: 217px;
+    }
+
+    &--4 {
+      max-width: 167px;
+    }
+  }
 }

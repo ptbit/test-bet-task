@@ -108,4 +108,27 @@
       }
     }
   }
+
+  .salute {
+    &--1 {
+      max-width: 160px;
+      left: 0 !important;
+    }
+
+    &--2 {
+      max-width: 200px;
+      bottom: auto !important;
+      left: auto !important;
+      right: 0 ;
+      top: 40% ;
+    }
+
+    &--3 {
+      display: none;
+    }
+
+    &--4 {
+      display: none;
+    }
+  }
 }
