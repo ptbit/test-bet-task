@@ -34,29 +34,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.snow {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.snow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 647px;
+  z-index: 100;
 }
 
 //            NEW MEDIA
 
 .koala {
   position: absolute;
+  z-index: 89;
 }
 
 .koala img {
@@ -67,6 +52,7 @@ body {
 .pyramid {
   position: absolute;
   left: 0;
+  z-index: 69;
 
   &__image {
     position: relative;
@@ -86,6 +72,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 82;
 }
 
 .statue img {
@@ -98,6 +85,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 79;
 }
 
 .crowd img {
@@ -110,6 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 99;
 
   &__sub-title {
     background-color: #ff267e;
@@ -218,7 +207,7 @@ body {
 
 .salute {
   position: absolute;
-
+  z-index: 59;
   img {
     width: 100%;
     height: 100%;
@@ -249,6 +238,7 @@ body {
 .conditions {
   position: absolute;
   display: flex;
+  z-index: 100;
 
   &__text {
     display: flex;
@@ -256,5 +246,37 @@ body {
     text-align: right;
     letter-spacing: 0.02em;
     color: #e8e8e8;
+  }
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 1px dashed yellow;
+}
+
+.snowflake {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(214, 214, 204, 0.8);
+  border-radius: 50%;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(90vh);
+    opacity: 0;
   }
 }
