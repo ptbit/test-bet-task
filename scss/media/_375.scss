@@ -86,15 +86,14 @@
       height: 28px;
       border: 0.8px solid #ededed;
 
-      
-      img{
+      img {
         max-width: 12px;
         max-height: 12px;
       }
     }
 
     .details__button {
-      position: fixed;
+      position: fixed !important;
       bottom: 0;
       left: 0;
       right: 0;
@@ -111,6 +110,10 @@
         border-radius: 3.36px;
         font-size: 16px;
         line-height: 21px;
+      }
+
+      .border {
+        display: none;
       }
     }
   }

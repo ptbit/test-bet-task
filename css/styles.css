@@ -146,7 +146,7 @@ a {
     max-height: 10px;
   }
   .info .details__button {
-    position: fixed;
+    position: fixed !important;
     bottom: 0;
     left: 0;
     right: 0;
@@ -164,6 +164,9 @@ a {
     border-radius: 3.36px;
     font-size: 16px;
     line-height: 21px;
+  }
+  .info .details__button .border {
+    display: none;
   }
   .salute--1 {
     max-width: 137px;
@@ -274,7 +277,7 @@ a {
     max-height: 12px;
   }
   .info .details__button {
-    position: fixed;
+    position: fixed !important;
     bottom: 0;
     left: 0;
     right: 0;
@@ -291,6 +294,9 @@ a {
     border-radius: 3.36px;
     font-size: 16px;
     line-height: 21px;
+  }
+  .info .details__button .border {
+    display: none;
   }
   .salute--1 {
     max-width: 160px;
@@ -365,6 +371,7 @@ a {
     max-height: 86px;
   }
   .info {
+    align-items: end !important;
     top: 86px;
     right: 48px;
   }
@@ -401,8 +408,7 @@ a {
     max-height: 13px;
   }
   .info .details__button {
-    display: flex;
-    justify-content: end;
+    max-width: fit-content;
   }
   .info .details__button button {
     width: 272px;
@@ -479,6 +485,7 @@ a {
     max-height: 111px;
   }
   .info {
+    align-items: end !important;
     top: 36px;
     right: 36px;
   }
@@ -515,8 +522,7 @@ a {
     max-height: 13px;
   }
   .info .details__button {
-    display: flex;
-    justify-content: end;
+    max-width: fit-content;
   }
   .info .details__button button {
     width: 272px;
@@ -843,6 +849,9 @@ body {
 
 .info {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .info__sub-title {
   background-color: #ff267e;
@@ -891,11 +900,45 @@ body {
   border-radius: 50%;
   background: #ff267e;
 }
+.info .details__button {
+  position: relative;
+}
 .info .details__button button {
+  position: relative;
   background: #05c489;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #00003d;
+  cursor: pointer;
+}
+.info .details__button .border {
+  position: absolute;
+  background-color: #ff0077;
+  z-index: 1;
+}
+.info .details__button .border.border-top {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 10px;
+}
+.info .details__button .border.border-right {
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 0%;
+}
+.info .details__button .border.border-bottom {
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 10px;
+}
+.info .details__button .border.border-left {
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 0%;
 }
 
 .salute {

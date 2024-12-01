@@ -107,6 +107,9 @@ body {
 
 .info {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__sub-title {
     background-color: #ff267e;
@@ -166,11 +169,49 @@ body {
   }
 
   .details__button {
+    position: relative;
+
     button {
+      position: relative;
       background: #05c489;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #00003d;
+      cursor: pointer;
+    }
+
+    .border {
+      position: absolute;
+      background-color: #ff0077;
+      z-index: 1;
+
+      &.border-top {
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 10px;
+      }
+
+      &.border-right {
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 0%;
+      }
+
+      &.border-bottom {
+        bottom: 0;
+        right: 0;
+        width: 0%;
+        height: 10px;
+      }
+
+      &.border-left {
+        bottom: 0;
+        left: 0;
+        width: 10px;
+        height: 0%;
+      }
     }
   }
 }

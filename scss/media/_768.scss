@@ -51,6 +51,7 @@
   }
 
   .info {
+    align-items: end !important;
     top: 86px;
     right: 48px;
 
@@ -88,15 +89,14 @@
       height: 33px;
       border: 1.1px solid #ededed;
 
-      img{
+      img {
         max-width: 13px;
         max-height: 13px;
       }
     }
 
     .details__button {
-      display: flex;
-      justify-content: end;
+      max-width: fit-content;
 
       button {
         width: 272px;
