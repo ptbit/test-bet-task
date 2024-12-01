@@ -80,6 +80,12 @@
       width: 44px;
       height: 36px;
       border: 1.2px solid #ededed;
+
+      
+      img{
+        max-width: 15px;
+        max-height: 15px;
+      }
     }
 
     .details__button {

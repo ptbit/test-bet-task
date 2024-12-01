@@ -87,6 +87,11 @@
       width: 40px;
       height: 33px;
       border: 1.1px solid #ededed;
+
+      img{
+        max-width: 13px;
+        max-height: 13px;
+      }
     }
 
     .details__button {
