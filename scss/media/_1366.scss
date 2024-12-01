@@ -114,4 +114,15 @@
       max-width: 191px;
     }
   }
+
+  .conditions {
+    bottom: 11px;
+    right: 24px;
+    gap: 15px;
+
+    &__text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
 }

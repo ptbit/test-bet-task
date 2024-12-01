@@ -132,4 +132,22 @@
       display: none;
     }
   }
+
+  .conditions {
+    flex-direction: column-reverse;
+    bottom: calc(43px + 48px);
+    right: auto;
+    gap: 6px;
+    left: 8px;
+
+    &__text {
+      font-size: 6.35px;
+      line-height: 8px;
+      text-align: start !important;
+    }
+
+    &__img {
+      max-width: 27px;
+    }
+  }
 }

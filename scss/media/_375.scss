@@ -119,8 +119,8 @@
       max-width: 200px;
       bottom: auto !important;
       left: auto !important;
-      right: 0 ;
-      top: 40% ;
+      right: 0;
+      top: 40%;
     }
 
     &--3 {
@@ -129,6 +129,24 @@
 
     &--4 {
       display: none;
+    }
+  }
+
+  .conditions {
+    flex-direction: column-reverse;
+    bottom: calc(43px + 54px);
+    right: auto;
+    gap: 7px;
+    left: 15px;
+
+    &__text {
+      font-size: 7.14286px;
+      line-height: 9px;
+      text-align: start !important;
+    }
+
+    &__img {
+      max-width: 31px;
     }
   }
 }

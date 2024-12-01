@@ -126,4 +126,22 @@
       max-width: 167px;
     }
   }
+
+  .conditions {
+    flex-direction: column-reverse;
+    bottom: 10px;
+    right: auto;
+    gap: 10px;
+    left: 15px;
+
+    &__text {
+      font-size: 10px;
+      line-height: 12px;
+      text-align: start !important;
+    }
+
+    &__img {
+      max-width: 42px;
+    }
+  }
 }
