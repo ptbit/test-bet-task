@@ -775,7 +775,7 @@ body {
   height: 100vh;
   background-color: #000055;
   overflow: hidden;
-  font-family: "Suisse Int'l";
+  font-family: "Suisse Int'l", Arial, sans-serif;
 }
 
 .logo {
@@ -849,6 +849,7 @@ body {
   text-align: center;
 }
 .info__sub-title h2 {
+  padding-inline: 10px;
   font-style: normal;
   font-weight: 600;
   text-align: center;
@@ -857,7 +858,7 @@ body {
   color: #ffffff;
 }
 .info__sub-title h2 span {
-  font-family: "Wulkan Display";
+  font-family: "Wulkan Display", Georgia, "Times New Roman", serif;
 }
 .info__title h1 {
   font-style: normal;
@@ -869,7 +870,7 @@ body {
 }
 .info__title .pink {
   color: #ff267e;
-  font-family: "Wulkan Display";
+  font-family: "Wulkan Display", Georgia, "Times New Roman", serif;
 }
 .info__details {
   display: flex;
@@ -877,6 +878,7 @@ body {
   justify-content: center;
 }
 .info .details__text {
+  text-align: center;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.03em;
