@@ -1,0 +1,44 @@
+.pyramid
+  .pyramid__projector.pyramid__projector--1
+    img(src='./images/projector.png' alt='')
+  .pyramid__projector.pyramid__projector--2
+    img(src='./images/projector.png' alt='')
+  .pyramid__projector.pyramid__projector--3
+    img(src='./images/projector.png' alt='')
+  picture
+    source(srcset='\
+    ./images/pyramid/1pyramid.png    1x,\
+    ./images/pyramid/1pyramid_x2.png 2x,\
+    ./images/pyramid/1pyramid_x3.png 3x\
+    ' media='(min-width: 1921px)')
+    source(srcset='\
+    ./images/pyramid/2pyramid.png    1x,\
+    ./images/pyramid/2pyramid_x2.png 2x,\
+    ./images/pyramid/2pyramid_x3.png 3x\
+    ' media='(min-width: 1366px) and (max-width: 1920px)')
+    source(srcset='\
+    ./images/pyramid/3pyramid.png    1x,\
+    ./images/pyramid/3pyramid_x2.png 2x,\
+    ./images/pyramid/3pyramid_x3.png 3x\
+    ' media='(min-width: 1024px) and (max-width: 1365px)')
+    // 4
+    source(srcset='\
+    ./images/pyramid/3pyramid.png    1x,\
+    ./images/pyramid/3pyramid_x2.png 2x,\
+    ./images/pyramid/3pyramid_x3.png 3x\
+    ' media='(min-width: 768px) and (max-width: 1023px)')
+    source(srcset='\
+    ./images/pyramid/5pyramid.png    1x,\
+    ./images/pyramid/5pyramid_x2.png 2x,\
+    ./images/pyramid/5pyramid_x3.png 3x\
+    ' media='(min-width: 375px) and (max-width: 767px)')
+    source(srcset='\
+    ./images/pyramid/6pyramid.png    1x,\
+    ./images/pyramid/6pyramid_x2.png 2x,\
+    ./images/pyramid/6pyramid_x3.png 3x\
+    ' media='(max-width: 374px)')
+    img.pyramid__image(src='./images/pyramid/1pyramid.png' srcset='\
+    ./images/pyramid/1pyramid.png    1x,\
+    ./images/pyramid/1pyramid_x2.png 2x,\
+    ./images/pyramid/1pyramid_x3.png 3x\
+    ' alt='Piramidă')

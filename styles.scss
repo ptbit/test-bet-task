@@ -7,12 +7,6 @@
 @import './scss/media/1366';
 @import './scss/media/1921';
 
-// * {
-//   padding: 0;
-//   margin: 0;
-//   box-sizing: border-box;
-// }
-
 html,
 body {
   min-width: 100vw;
@@ -27,7 +21,7 @@ body {
 
   background-color: #000055;
   overflow: hidden;
-  font-family: "Suisse Int'l";
+  font-family: "Suisse Int'l", Arial, sans-serif;
 }
 
 .logo {
@@ -113,7 +107,7 @@ body {
       color: #ffffff;
 
       span {
-        font-family: 'Wulkan Display';
+        font-family: 'Wulkan Display', Georgia, 'Times New Roman', serif;
       }
     }
   }
@@ -130,7 +124,7 @@ body {
 
     .pink {
       color: #ff267e;
-      font-family: 'Wulkan Display';
+      font-family: 'Wulkan Display', Georgia, 'Times New Roman', serif;
     }
   }
 
@@ -141,6 +135,7 @@ body {
   }
 
   .details__text {
+    text-align: center;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.03em;
